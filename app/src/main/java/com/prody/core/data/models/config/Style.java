@@ -1,0 +1,61 @@
+package com.prody.core.data.models.config;
+
+import android.graphics.Color;
+
+import com.google.gson.annotations.SerializedName;
+
+public class Style {
+    @SerializedName("primary")
+    private String mPrimary;
+    @SerializedName("secondary")
+    private String mSecondary;
+    @SerializedName("background")
+    private String mBackground;
+    @SerializedName("text_color")
+    private String mTextColor;
+    @SerializedName("text_color_secondary")
+    private String mTextColorSecondary;
+    @SerializedName("accent")
+    private String mAccent;
+
+    public int getAccent() {
+        return parseColor(mAccent);
+    }
+
+    public int getPrimary() {
+        return parseColor(mPrimary);
+    }
+
+    public int getSecondary() {
+        return parseColor(mSecondary);
+    }
+
+    public int getBackground() {
+        return parseColor(mBackground);
+    }
+
+    public int getTextColor() {
+        return parseColor(mTextColor);
+    }
+
+    public int getTextColorSecondary() {
+        return parseColor(mTextColorSecondary);
+    }
+
+    private static int parseColor(String color) {
+        try {
+            return Color.parseColor(color);
+        } catch (Exception e) {
+            return Color.BLACK;
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "Style{" +
+                "mPrimary='" + mPrimary + '\'' +
+                ", mSecondary='" + mSecondary + '\'' +
+                ", mBackground='" + mBackground + '\'' +
+                '}';
+    }
+}

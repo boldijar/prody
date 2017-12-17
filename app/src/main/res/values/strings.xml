@@ -1,0 +1,8 @@
+<resources>
+    <string name="appname">Prody</string>
+
+    <!-- empty layout -->
+    <string name="retry">Retry</string>
+    <string name="no_events_found">No events found :(</string>
+
+</resources>
