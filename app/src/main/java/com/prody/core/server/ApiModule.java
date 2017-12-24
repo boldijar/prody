@@ -25,6 +25,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 @Module
 public class ApiModule {
 
+    public static String ENDPOINT = "www.google.ro";
     private Shaorma mShaorma;
 
     public ApiModule(Shaorma shaorma) {
@@ -81,7 +82,7 @@ public class ApiModule {
         return new Retrofit.Builder()
                 .addConverterFactory(converter)
                 .addCallAdapterFactory(adapterFactory)
-                .baseUrl(Constants.ENDPOINT)
+                .baseUrl(ENDPOINT)
                 .client(okHttpClient)
                 .build();
     }

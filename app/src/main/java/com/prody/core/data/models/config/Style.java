@@ -17,6 +17,8 @@ public class Style {
     private String mTextColorSecondary;
     @SerializedName("accent")
     private String mAccent;
+    @SerializedName("text_color_on_background")
+    private String mTextColorOnBackground;
 
     public int getAccent() {
         return parseColor(mAccent);
@@ -40,6 +42,10 @@ public class Style {
 
     public int getTextColorSecondary() {
         return parseColor(mTextColorSecondary);
+    }
+
+    public int getTextColorOnBackground() {
+        return parseColor(mTextColorOnBackground);
     }
 
     private static int parseColor(String color) {

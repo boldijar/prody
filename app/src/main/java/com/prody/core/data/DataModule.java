@@ -4,6 +4,7 @@ import com.prody.Shaorma;
 import com.prody.core.data.models.config.Config;
 import com.prody.core.data.models.config.Hierarchy;
 import com.prody.core.data.models.config.Style;
+import com.prody.core.server.ApiModule;
 
 import dagger.Module;
 import dagger.Provides;
@@ -34,5 +35,10 @@ public class DataModule {
     @Provides
     Style provideStyle() {
         return CONFIG.mStyle;
+    }
+
+    public static void initConfig(Config config) {
+        CONFIG = config;
+        ApiModule.ENDPOINT = config.getCore().getEndpoint();
     }
 }

@@ -5,18 +5,73 @@ import com.google.gson.annotations.SerializedName;
 import java.io.Serializable;
 
 /**
- * TODO: Class description
- *
  * @author Paul
  * @since 2017.12.17
  */
 
-public class MenuItem implements Serializable{
+public class MenuItem implements Serializable {
 
     @SerializedName("title")
     private String mTitle;
+    @SerializedName("type")
+    private ModuleType mModuleType;
+    @SerializedName("variant")
+    private Variant mVariant;
+    @SerializedName("category")
+    private String mCategory;
+    @SerializedName("span")
+    private int mSpan;
+    @SerializedName("shuffle")
+    private boolean mShuffle;
+    @SerializedName("using_padding")
+    private Boolean mUsingPadding;
+    @SerializedName("staggered")
+    private Boolean mStaggered;
+
+    public boolean isStaggered() {
+        if (mStaggered == null) {
+            return false;
+        }
+        return mStaggered;
+    }
+
+    public boolean isUsingPadding() {
+        if (mUsingPadding == null) {
+            return true;
+        }
+        return mUsingPadding;
+    }
 
     public String getTitle() {
         return mTitle;
+    }
+
+    public ModuleType getModuleType() {
+        if (mModuleType == null) {
+            return ModuleType.UNKNOWN;
+        }
+        return mModuleType;
+    }
+
+    public Variant getVariant() {
+        if (mVariant == null) {
+            return Variant.NONE;
+        }
+        return mVariant;
+    }
+
+    public String getCategory() {
+        return mCategory;
+    }
+
+    public int getSpan() {
+        if (mSpan == 0) {
+            return 1;
+        }
+        return mSpan;
+    }
+
+    public boolean isShuffle() {
+        return mShuffle;
     }
 }

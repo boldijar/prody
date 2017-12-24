@@ -29,10 +29,10 @@ public class NetworkInterceptor implements Interceptor {
         final Request original = chain.request();
 
         Request.Builder builder = original.newBuilder();
-        String token = Prefs.Token.get();
-        if (token != null) {
-            builder = builder.header("Authorization", "Bearer " + Prefs.Token.get());
-        }
+//        String token = Prefs.Token.get();
+//        if (token != null) {
+//            builder = builder.header("Authorization", "Bearer " + Prefs.Token.get());
+//        }
 
         Response response = chain.proceed(builder.build());
         if (!response.isSuccessful()) {

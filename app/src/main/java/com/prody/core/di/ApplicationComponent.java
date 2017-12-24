@@ -5,6 +5,8 @@ import com.prody.core.data.DataModule;
 import com.prody.core.server.ApiModule;
 import com.prody.modules.home.activity.HomeActivity;
 import com.prody.modules.home.fragment.HomeFragment;
+import com.prody.modules.modularfragment.RegularListAdapter;
+import com.prody.modules.modularfragment.mvp.ModularFragmentPresenter;
 
 import dagger.Component;
 
@@ -16,4 +18,8 @@ public interface ApplicationComponent {
     void inject(HomeActivity homeActivity);
 
     void inject(HomeFragment homeFragment);
+
+    void inject(ModularFragmentPresenter modularFragmentPresenter);
+
+    void inject(RegularListAdapter regularListAdapter);
 }

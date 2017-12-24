@@ -1,7 +1,7 @@
 {
   "core": {
     "version": 1,
-    "endpoint": "www.google.ro"
+    "endpoint": "http://192.168.100.7:1997/prody/index.php/"
   },
   "style": {
     "primary": "#00BCD4",
@@ -9,7 +9,8 @@
     "accent": "#795548",
     "background": "#ffffff",
     "text_color": "#ffffff",
-    "text_color_secondary": "#F5F5F5"
+    "text_color_secondary": "#F5F5F5",
+    "text_color_on_background": "#1a1a1a"
   },
   "hierarchy": {
     "title": "",
@@ -19,13 +20,26 @@
     "image_alignment": "center",
     "items": [
       {
-        "title": "Home"
+        "title": "Home - card basic details",
+        "type": "vertical_list",
+        "variant": "card_basic_details",
+        "category": "all",
+        "span": 2,
+        "using_padding": true,
+        "staggered": false
       },
       {
-        "title": "Shoes"
+        "title": "Shoes",
+        "type": "vertical_list",
+        "variant": "card_image",
+        "category": "shoes"
       },
       {
-        "title": "Best offers"
+        "title": "Best offers",
+        "type": "vertical_list",
+        "variant": "card_image",
+        "category": "all",
+        "shuffle": true
       },
       {
         "title": "T-Shirts"

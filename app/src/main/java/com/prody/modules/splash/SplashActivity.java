@@ -33,7 +33,7 @@ public class SplashActivity extends BaseActivity implements SplashView {
 
     @Override
     public void showConfig(Config config) {
-        DataModule.CONFIG = config;
+        DataModule.initConfig(config);
         startActivity(HomeActivity.createIntent(this));
         finish();
     }

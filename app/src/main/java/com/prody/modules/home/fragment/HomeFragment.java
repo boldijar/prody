@@ -11,6 +11,7 @@ import android.widget.LinearLayout;
 import com.gym.app.R;
 import com.prody.core.data.models.config.Hierarchy;
 import com.prody.core.data.models.config.MenuItem;
+import com.prody.core.data.models.config.NavigationType;
 import com.prody.core.data.models.config.Style;
 import com.prody.core.di.InjectionHelper;
 import com.prody.core.ui.fragment.BaseFragment;
@@ -60,7 +61,7 @@ public class HomeFragment extends BaseFragment {
 
     private void initUiFromConfig() {
         mLinearLayout.setBackgroundColor(mStyle.getBackground());
-        if (mHome.getNavigationType() == Hierarchy.NavigationType.TABS) {
+        if (mHome.getNavigationType() == NavigationType.TABS) {
             loadTabs();
         }
     }

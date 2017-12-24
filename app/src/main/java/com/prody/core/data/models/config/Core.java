@@ -8,6 +8,10 @@ public class Core {
     @SerializedName("version")
     public int mVersion;
 
+    public String getEndpoint() {
+        return mEndpoint;
+    }
+
     @Override
     public String toString() {
         return "Core{" +

@@ -17,6 +17,10 @@ public class Config {
 
     public static Config EMPTY = new Config();
 
+    public Core getCore() {
+        return mCore;
+    }
+
     @Override
     public String toString() {
         return "Config{" +

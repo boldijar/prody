@@ -42,20 +42,4 @@ public class Hierarchy {
         return mMenuItems;
     }
 
-    public enum ImageAlignment {
-        @SerializedName("left")
-        LEFT,
-        @SerializedName("center")
-        CENTER,
-        @SerializedName("right")
-        RIGHT;
-    }
-
-    public enum NavigationType {
-        @SerializedName("tabs")
-        TABS,
-        @SerializedName("drawer")
-        DRAWER,
-        NONE
-    }
 }
