@@ -2,7 +2,7 @@ package com.prody.core.data;
 
 import com.prody.Shaorma;
 import com.prody.core.data.models.config.Config;
-import com.prody.core.data.models.config.Home;
+import com.prody.core.data.models.config.Hierarchy;
 import com.prody.core.data.models.config.Style;
 
 import dagger.Module;
@@ -27,8 +27,8 @@ public class DataModule {
     }
 
     @Provides
-    Home provideHome() {
-        return CONFIG.mHierarchy.mHome;
+    Hierarchy provideHierarchy() {
+        return CONFIG.mHierarchy;
     }
 
     @Provides

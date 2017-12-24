@@ -12,23 +12,24 @@
     "text_color_secondary": "#F5F5F5"
   },
   "hierarchy": {
-    "home": {
-      "title": "",
-      "navigation_type": "tabs",
-      "has_toolbar": true,
-      "image": "https://i.imgur.com/fcAx718.png",
-      "image_alignment": "center",
-      "main_menu_items": [
-        {
-          "title": "Newest products"
-        },
-        {
-          "title": "Best shoes"
-        },
-        {
-          "title": "Black friday offers"
-        }
-      ]
-    }
+    "title": "",
+    "navigation_type": "tabs",
+    "has_toolbar": true,
+    "image": "https://i.imgur.com/fcAx718.png",
+    "image_alignment": "center",
+    "items": [
+      {
+        "title": "Home"
+      },
+      {
+        "title": "Shoes"
+      },
+      {
+        "title": "Best offers"
+      },
+      {
+        "title": "T-Shirts"
+      }
+    ]
   }
 }

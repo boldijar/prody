@@ -15,7 +15,7 @@ import android.widget.LinearLayout;
 
 import com.bumptech.glide.Glide;
 import com.gym.app.R;
-import com.prody.core.data.models.config.Home;
+import com.prody.core.data.models.config.Hierarchy;
 import com.prody.core.data.models.config.Style;
 import com.prody.core.di.InjectionHelper;
 import com.prody.core.ui.activity.BaseConfigActivity;
@@ -34,7 +34,7 @@ import butterknife.ButterKnife;
 public class HomeActivity extends BaseConfigActivity {
 
     @Inject
-    Home mHome;
+    Hierarchy mHierarchy;
     @Inject
     Style mStyle;
 
@@ -57,18 +57,18 @@ public class HomeActivity extends BaseConfigActivity {
 
     private void initUiFromConfig() {
         mLinearLayout.setBackgroundColor(mStyle.getBackground());
-        if (mHome.mHasToolbar) {
+        if (mHierarchy.mHasToolbar) {
             View toolbarView = getLayoutInflater().inflate(R.layout.toolbar, mLinearLayout, false);
             Toolbar toolbar = toolbarView.findViewById(R.id.toolbar);
-            toolbar.setTitle(mHome.mTitle);
+            toolbar.setTitle(mHierarchy.mTitle);
             toolbar.setTitleTextColor(mStyle.getTextColor());
             toolbar.setBackgroundColor(mStyle.getPrimary());
             mLinearLayout.addView(toolbarView, 0);
 
-            if (!TextUtils.isEmpty(mHome.mImage)) {
+            if (!TextUtils.isEmpty(mHierarchy.mImage)) {
                 ImageView imageView = toolbarView.findViewById(R.id.image);
                 FrameLayout.LayoutParams params = (FrameLayout.LayoutParams) imageView.getLayoutParams();
-                switch (mHome.getImageAlignment()) {
+                switch (mHierarchy.getImageAlignment()) {
                     case CENTER:
                         params.gravity = Gravity.CENTER;
                         break;
@@ -79,7 +79,7 @@ public class HomeActivity extends BaseConfigActivity {
                         params.gravity = Gravity.START;
                 }
                 imageView.setLayoutParams(params);
-                Glide.with(imageView).load(mHome.mImage).into(imageView);
+                Glide.with(imageView).load(mHierarchy.mImage).into(imageView);
             }
         }
     }

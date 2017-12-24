@@ -2,6 +2,8 @@ package com.prody.core.data.models.config;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.io.Serializable;
+
 /**
  * TODO: Class description
  *
@@ -9,7 +11,7 @@ import com.google.gson.annotations.SerializedName;
  * @since 2017.12.17
  */
 
-public class MainMenuItem {
+public class MenuItem implements Serializable{
 
     @SerializedName("title")
     private String mTitle;
