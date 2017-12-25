@@ -22,7 +22,7 @@
       {
         "title": "Home - card basic details",
         "type": "vertical_list",
-        "variant": "card_basic_details",
+        "variant": "basic_details",
         "category": "all",
         "span": 2,
         "using_padding": true,
@@ -31,8 +31,11 @@
       {
         "title": "Shoes",
         "type": "vertical_list",
-        "variant": "card_image",
-        "category": "shoes"
+        "variant": "basic_details",
+        "category": "all",
+        "span": 2,
+        "using_padding": true,
+        "staggered": false
       },
       {
         "title": "Best offers",

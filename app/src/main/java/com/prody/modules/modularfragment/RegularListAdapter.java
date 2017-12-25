@@ -1,7 +1,9 @@
 package com.prody.modules.modularfragment;
 
 import android.support.v7.widget.RecyclerView;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -9,6 +11,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.gym.app.R;
 import com.prody.core.data.models.Product;
+import com.prody.core.data.models.config.MenuItem;
 import com.prody.core.data.models.config.Style;
 import com.prody.core.data.models.config.Variant;
 import com.prody.core.di.InjectionHelper;
@@ -32,9 +35,11 @@ public class RegularListAdapter extends RecyclerView.Adapter<RegularListAdapter.
     Style mStyle;
 
     private final List<Product> mProducts;
+    private final MenuItem mMenuItem;
 
-    public RegularListAdapter(List<Product> products) {
+    public RegularListAdapter(List<Product> products, MenuItem menuItem) {
         mProducts = products;
+        mMenuItem = menuItem;
         InjectionHelper.getApplicationComponent().inject(this);
     }
 
@@ -56,19 +61,35 @@ public class RegularListAdapter extends RecyclerView.Adapter<RegularListAdapter.
     public void onBindViewHolder(RegularListAdapter.ViewHolder holder, int position) {
         Product product = mProducts.get(position);
         if (holder.mImageView != null) {
+            holder.mImageView.setScaleType(mMenuItem.getImageScaleType().getScaleType());
             Glide.with(holder.mImageView.getContext()).load(product.getImage()).into(holder.mImageView);
         }
         if (holder.mTitle != null) {
-            holder.mTitle.setText(product.getTitle());
-            holder.mTitle.setTextColor(mStyle.getTextColorOnBackground());
+            if (TextUtils.isEmpty(product.getTitle())) {
+                holder.mTitle.setVisibility(View.GONE);
+            } else {
+                holder.mTitle.setText(product.getTitle());
+                holder.mTitle.setTextColor(mStyle.getTextColorOnBackground());
+                holder.mTitle.setVisibility(View.VISIBLE);
+            }
         }
         if (holder.mSubtitle != null) {
-            holder.mSubtitle.setText(product.getSubtitle());
-            holder.mSubtitle.setTextColor(mStyle.getTextColorOnBackground());
+            if (TextUtils.isEmpty(product.getSubtitle())) {
+                holder.mSubtitle.setVisibility(View.GONE);
+            } else {
+                holder.mSubtitle.setText(product.getSubtitle());
+                holder.mSubtitle.setTextColor(mStyle.getTextColorOnBackground());
+                holder.mSubtitle.setVisibility(View.VISIBLE);
+            }
         }
         if (holder.mPrice != null) {
-            holder.mPrice.setText(product.getPrice());
-            holder.mPrice.setTextColor(mStyle.getAccent());
+            if (TextUtils.isEmpty(product.getPrice())) {
+                holder.mPrice.setVisibility(View.GONE);
+            } else {
+                holder.mPrice.setText(product.getPrice());
+                holder.mPrice.setTextColor(mStyle.getAccent());
+                holder.mPrice.setVisibility(View.VISIBLE);
+            }
         }
     }
 

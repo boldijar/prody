@@ -11,6 +11,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin"
         android:orientation="vertical">
 
         <ImageView
@@ -42,7 +43,6 @@
             android:id="@+id/item_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/margin"
             android:layout_marginLeft="@dimen/margin"
             android:textSize="18sp"
             tools:text="129 RON"/>

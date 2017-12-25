@@ -1,0 +1,42 @@
+{
+  "core": {
+    "version": 1,
+    "endpoint": "http://192.168.100.7:1997/prody/index.php/"
+  },
+  "style": {
+    "primary": "#F57C00",
+    "secondary": "#EF6C00",
+    "accent": "#AEEA00",
+    "background": "#ffffff",
+    "text_color": "#ffffff",
+    "text_color_secondary": "#F5F5F5",
+    "text_color_on_background": "#1a1a1a"
+  },
+  "hierarchy": {
+    "title": "Boldijar Paul portfolio",
+    "navigation_type": "tabs",
+    "has_toolbar": true,
+    "items": [
+      {
+        "title": "Mobile applications",
+        "type": "vertical_list",
+        "variant": "image_wrap",
+        "category": "mobile_apps",
+        "span": 2,
+        "using_padding": false,
+        "staggered": true,
+        "shuflle": true,
+        "scale_type": "fit_center"
+      },
+      {
+        "title": "Game applications",
+        "type": "vertical_list",
+        "variant": "basic_details",
+        "category": "games",
+        "span": 1,
+        "using_padding": false,
+        "staggered": false
+      }
+    ]
+  }
+}

@@ -17,6 +17,8 @@ public enum Variant {
     CARD_BASIC_DETAILS(R.layout.item_card_basic_details),
     @SerializedName("basic_details")
     BASIC_DETAILS(R.layout.item_basic_details),
+    @SerializedName("image_wrap")
+    IMAGE_WRAP(R.layout.item_image_wrap),
 
     NONE(0);
 

@@ -75,7 +75,7 @@ public class ModularFragment extends BaseFragment implements ModularFragmentView
 
     @Override
     public void showProducts(List<Product> products) {
-        mRegularListAdapter = new RegularListAdapter(products);
+        mRegularListAdapter = new RegularListAdapter(products, mItem);
         if (mItem.getSpan() > 1 && mItem.isStaggered()) {
             mRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(mItem.getSpan(), StaggeredGridLayoutManager.VERTICAL));
         } else {

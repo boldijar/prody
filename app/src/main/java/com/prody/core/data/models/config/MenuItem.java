@@ -27,6 +27,15 @@ public class MenuItem implements Serializable {
     private Boolean mUsingPadding;
     @SerializedName("staggered")
     private Boolean mStaggered;
+    @SerializedName("scale_type")
+    private ImageScaleType mImageScaleType;
+
+    public ImageScaleType getImageScaleType() {
+        if (mImageScaleType == null) {
+            return ImageScaleType.CENTER_CROP;
+        }
+        return mImageScaleType;
+    }
 
     public boolean isStaggered() {
         if (mStaggered == null) {
