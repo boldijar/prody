@@ -2,7 +2,7 @@ package com.prody.core.server;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.gym.app.BuildConfig;
+import com.prody.BuildConfig;
 import com.prody.Shaorma;
 import com.prody.server.ApiService;
 import com.prody.server.NetworkInterceptor;

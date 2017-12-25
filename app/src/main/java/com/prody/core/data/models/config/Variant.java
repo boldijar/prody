@@ -1,7 +1,7 @@
 package com.prody.core.data.models.config;
 
 import com.google.gson.annotations.SerializedName;
-import com.gym.app.R;
+import com.prody.R;
 
 /**
  * @author Paul

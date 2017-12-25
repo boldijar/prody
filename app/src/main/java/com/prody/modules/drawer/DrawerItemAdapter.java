@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.gym.app.R;
+import com.prody.R;
 import com.prody.core.data.models.config.MenuItem;
 import com.prody.core.data.models.config.Style;
 import com.prody.core.di.InjectionHelper;

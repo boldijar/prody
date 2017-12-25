@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
-import com.gym.app.R;
+import com.prody.R;
 import com.prody.core.data.models.config.Hierarchy;
 import com.prody.core.data.models.config.MenuItem;
 import com.prody.core.data.models.config.NavigationType;

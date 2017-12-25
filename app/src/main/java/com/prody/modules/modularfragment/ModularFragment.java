@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.gym.app.R;
+import com.prody.R;
 import com.prody.core.data.models.Product;
 import com.prody.core.data.models.config.MenuItem;
 import com.prody.core.ui.fragment.BaseFragment;

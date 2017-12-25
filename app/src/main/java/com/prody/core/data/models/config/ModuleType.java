@@ -11,5 +11,7 @@ public enum ModuleType {
 
     @SerializedName("vertical_list")
     VERTICAL_LIST,
+    @SerializedName("contact")
+    CONTACT,
     UNKNOWN
 }

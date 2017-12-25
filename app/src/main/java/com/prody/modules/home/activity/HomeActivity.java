@@ -19,7 +19,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.bumptech.glide.Glide;
-import com.gym.app.R;
+import com.prody.R;
 import com.prody.core.data.models.config.Hierarchy;
 import com.prody.core.data.models.config.NavigationType;
 import com.prody.core.data.models.config.Style;

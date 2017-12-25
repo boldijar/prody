@@ -6,6 +6,8 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 import com.prody.core.data.models.config.MenuItem;
+import com.prody.core.ui.fragment.UnimplementedFragment;
+import com.prody.modules.contact.ContactFragment;
 import com.prody.modules.modularfragment.ModularFragment;
 
 import java.util.List;
@@ -27,7 +29,13 @@ public class ModularPageAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        return ModularFragment.newInstance(mMenuItems.get(position));
+        switch (mMenuItems.get(position).getModuleType()) {
+            case VERTICAL_LIST:
+                return ModularFragment.newInstance(mMenuItems.get(position));
+            case CONTACT:
+                return ContactFragment.newInstance(mMenuItems.get(position));
+        }
+        return new UnimplementedFragment();
     }
 
     @Override

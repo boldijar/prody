@@ -3,7 +3,7 @@ package com.prody.modules.splash;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
-import com.gym.app.R;
+import com.prody.R;
 import com.prody.core.data.DataModule;
 import com.prody.core.data.models.config.Config;
 import com.prody.core.ui.activity.BaseActivity;

@@ -3,8 +3,8 @@ package com.prody;
 import android.app.Application;
 
 import com.facebook.stetho.Stetho;
-import com.gym.app.BuildConfig;
-import com.gym.app.R;
+import com.prody.BuildConfig;
+import com.prody.R;
 import com.prody.core.data.DataModule;
 import com.prody.core.di.ApplicationComponent;
 import com.prody.core.di.ApplicationModule;

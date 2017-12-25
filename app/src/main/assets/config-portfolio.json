@@ -16,7 +16,7 @@
   },
   "hierarchy": {
     "title": "Boldijar Paul portfolio",
-    "navigation_type": "drawer",
+    "navigation_type": "tabs",
     "has_toolbar": true,
     "drawer_image": "https://boldijar.github.io/img/team/paul.png",
     "items": [
@@ -42,6 +42,35 @@
         "scale_type": "fit_center",
         "using_padding": false,
         "staggered": false
+      },
+      {
+        "icon": "https://i.imgur.com/Ug1nZwn.png",
+        "title": "Contact me",
+        "type": "contact",
+        "contact_items": [
+          {
+            "type": "email",
+            "text": "boldijar.paul@gmail.com"
+          },
+          {
+            "type": "email",
+            "text": "paul.bv96@yahoo.com"
+          },
+          {
+            "type": "phone",
+            "text": "+40740000000"
+          },
+          {
+            "type": "location",
+            "text": "Universitatii 7-9, Cluj-Napoca",
+            "latitude": 46.7677955,
+            "longitude": 23.5912762
+          },
+          {
+            "type": "info",
+            "text": "I can do mobile apps (like this one), mobile game, desktop apps, web applications and much more! I can code in java, c#, python, html, js, php."
+          }
+        ]
       }
     ]
   }

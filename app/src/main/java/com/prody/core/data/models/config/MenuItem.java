@@ -3,6 +3,7 @@ package com.prody.core.data.models.config;
 import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 /**
  * @author Paul
@@ -31,6 +32,8 @@ public class MenuItem implements Serializable {
     private ImageScaleType mImageScaleType;
     @SerializedName("icon")
     private String mIcon;
+    @SerializedName("contact_items")
+    private ArrayList<ContactItem> mContactItems;
 
     public String getIcon() {
         return mIcon;
@@ -88,5 +91,12 @@ public class MenuItem implements Serializable {
 
     public boolean isShuffle() {
         return mShuffle;
+    }
+
+    public ArrayList<ContactItem> getContactItems() {
+        if (mContactItems == null) {
+            mContactItems = new ArrayList<>();
+        }
+        return mContactItems;
     }
 }

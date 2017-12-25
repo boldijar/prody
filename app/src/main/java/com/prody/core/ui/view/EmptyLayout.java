@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.gym.app.R;
+import com.prody.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
