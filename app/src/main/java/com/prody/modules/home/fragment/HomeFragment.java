@@ -3,7 +3,6 @@ package com.prody.modules.home.fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
-import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
@@ -15,19 +14,23 @@ import com.prody.core.data.models.config.NavigationType;
 import com.prody.core.data.models.config.Style;
 import com.prody.core.di.InjectionHelper;
 import com.prody.core.ui.fragment.BaseFragment;
+import com.prody.core.ui.view.EnablingViewPager;
+import com.prody.modules.home.HomeFragmentNavigation;
+import com.prody.modules.home.activity.HomeActivity;
 import com.prody.modules.home.adapters.ModularPageAdapter;
 
 import javax.inject.Inject;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import timber.log.Timber;
 
 /**
  * @author Paul
  * @since 2017.12.17
  */
 
-public class HomeFragment extends BaseFragment {
+public class HomeFragment extends BaseFragment implements HomeFragmentNavigation {
 
     @Inject
     Hierarchy mHome;
@@ -37,7 +40,8 @@ public class HomeFragment extends BaseFragment {
     @BindView(R.id.home_parent)
     LinearLayout mLinearLayout;
     @BindView(R.id.home_pager)
-    ViewPager mViewPager;
+    EnablingViewPager mViewPager;
+
     private ModularPageAdapter mAdapter;
 
     @Override
@@ -68,6 +72,7 @@ public class HomeFragment extends BaseFragment {
 
     private void loadTabs() {
         if (mHome.getMenuItems() != null) {
+            mViewPager.setPagingEnabled(true);
             final TabLayout tabLayout = new TabLayout(getContext());
             TabLayout.LayoutParams layoutParams = new TabLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
             tabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);
@@ -85,5 +90,15 @@ public class HomeFragment extends BaseFragment {
             tabLayout.setupWithViewPager(mViewPager);
         }
 
+    }
+
+    @Override
+    public void goToPage(int index) {
+        if (index >= mViewPager.getAdapter().getCount()) {
+            Timber.e("Invalid index " + index + " when size is " + mViewPager.getAdapter().getCount());
+            return;
+        }
+        mViewPager.setCurrentItem(index, false);
+        ((HomeActivity) getActivity()).closeDrawer();
     }
 }

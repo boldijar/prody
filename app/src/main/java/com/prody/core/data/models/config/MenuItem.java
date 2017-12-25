@@ -29,6 +29,12 @@ public class MenuItem implements Serializable {
     private Boolean mStaggered;
     @SerializedName("scale_type")
     private ImageScaleType mImageScaleType;
+    @SerializedName("icon")
+    private String mIcon;
+
+    public String getIcon() {
+        return mIcon;
+    }
 
     public ImageScaleType getImageScaleType() {
         if (mImageScaleType == null) {

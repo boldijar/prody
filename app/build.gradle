@@ -6,6 +6,7 @@ apply plugin: 'com.android.application'
 
 repositories {
     maven { url 'https://maven.google.com' }
+    maven { url "https://jitpack.io" }
 }
 
 ext {
@@ -68,6 +69,8 @@ dependencies {
     annotationProcessor "com.google.dagger:dagger-compiler:$daggerVersion"
     annotationProcessor "com.jakewharton:butterknife-compiler:$butterknifeVersion"
     annotationProcessor "android.arch.persistence.room:compiler:$roomVersion"
+    compile 'com.github.ybq:Android-SpinKit:1.1.0'
+
 
 }
 

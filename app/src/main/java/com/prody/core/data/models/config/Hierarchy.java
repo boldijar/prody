@@ -23,6 +23,12 @@ public class Hierarchy {
     private ImageAlignment mImageAlignment;
     @SerializedName("items")
     private List<MenuItem> mMenuItems;
+    @SerializedName("drawer_image")
+    private String mDrawerImage;
+
+    public String getDrawerImage() {
+        return mDrawerImage;
+    }
 
     public NavigationType getNavigationType() {
         if (mNavigationType == null) {

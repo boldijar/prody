@@ -19,6 +19,18 @@ public class Style {
     private String mAccent;
     @SerializedName("text_color_on_background")
     private String mTextColorOnBackground;
+    @SerializedName("drawer_background")
+    private String mDrawerBackground;
+    @SerializedName("drawer_text_color")
+    private String mDrawerTextColor;
+
+    public int getDrawerTextColor() {
+        return parseColor(mDrawerTextColor);
+    }
+
+    public int getDrawerBackground() {
+        return parseColor(mDrawerBackground);
+    }
 
     public int getAccent() {
         return parseColor(mAccent);

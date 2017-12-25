@@ -10,7 +10,9 @@
     "background": "#ffffff",
     "text_color": "#ffffff",
     "text_color_secondary": "#F5F5F5",
-    "text_color_on_background": "#1a1a1a"
+    "text_color_on_background": "#1a1a1a",
+    "drawer_background": "#ffffff",
+    "drawer_text_color": "1a1a1a"
   },
   "hierarchy": {
     "title": "",
