@@ -1,7 +1,7 @@
 {
   "core": {
     "version": 1,
-    "endpoint": "http://192.168.100.7:1997/prody/index.php/"
+    "endpoint": "http://172.25.12.232:1997/prody/index.php/"
   },
   "style": {
     "primary": "#F57C00",
@@ -28,7 +28,7 @@
         "category": "mobile_apps",
         "span": 2,
         "using_padding": true,
-        "staggered": false,
+        "staggered": true,
         "shuffle": true,
         "scale_type": "center_crop"
       },

@@ -32,7 +32,7 @@ public class SplashPresenter extends Presenter<SplashView> {
             @Override
             public void subscribe(ObservableEmitter<Config> e) throws Exception {
                 Thread.sleep(2000);
-                InputStream inputStream = context.getAssets().open("config-portfolio.json");
+                InputStream inputStream = context.getAssets().open("config.json");
                 InputStreamReader reader = new InputStreamReader(inputStream);
                 Config config = new Gson().fromJson(reader, Config.class);
                 e.onNext(config);

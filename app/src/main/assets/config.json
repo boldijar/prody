@@ -1,7 +1,7 @@
 {
   "core": {
     "version": 1,
-    "endpoint": "http://192.168.100.7:1997/prody/index.php/"
+    "endpoint": "http://172.25.12.232:1997/prody/index.php/"
   },
   "style": {
     "primary": "#00BCD4",
@@ -17,7 +17,7 @@
   "hierarchy": {
     "title": "",
     "navigation_type": "tabs",
-    "has_toolbar": true,
+    "has_toolbar": false,
     "image": "https://i.imgur.com/fcAx718.png",
     "image_alignment": "center",
     "items": [
@@ -48,6 +48,28 @@
       },
       {
         "title": "T-Shirts"
+      },
+      {
+        "title": "Contact me",
+        "type": "contact",
+        "contact_items": [
+          {
+            "type": "email",
+            "text": "boldijar.paul@gmail.com"
+          },
+          {
+            "type": "email",
+            "text": "paul.bv96@yahoo.com"
+          },
+          {
+            "type": "phone",
+            "text": "+40740000000"
+          },
+          {
+            "type": "info",
+            "text": "We sell anything you need. pls contact us"
+          }
+        ]
       }
     ]
   }
