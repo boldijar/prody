@@ -34,6 +34,8 @@ public class MenuItem implements Serializable {
     private String mIcon;
     @SerializedName("contact_items")
     private ArrayList<ContactItem> mContactItems;
+    @SerializedName("url")
+    private String mUrl;
 
     public String getIcon() {
         return mIcon;
@@ -98,5 +100,9 @@ public class MenuItem implements Serializable {
             mContactItems = new ArrayList<>();
         }
         return mContactItems;
+    }
+
+    public String getUrl() {
+        return mUrl;
     }
 }

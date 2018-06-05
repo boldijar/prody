@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Trippy Snake",
+    "subtitle": "Clasic snake game. But a bit trippy.",
+    "image": "https://boldijar.github.io/img/trippy_0.gif"
+  },
+  {
+    "id": 2,
+    "title": "Nicusor Jump",
+    "subtitle": "Nicusor, a funny bum, jumping around!",
+    "image": "https://boldijar.github.io/img/nicu_0.gif"
+  },
+  {
+    "id": 3,
+    "title": "Kid On Crack 2",
+    "subtitle": "Smashing the basketball ball! How fun is that",
+    "image": "https://boldijar.github.io/img/crack2_0.gif"
+  },
+  {
+    "id": 4,
+    "title": "Ice Bucket Challenge",
+    "subtitle": "Stack as many buckets as possible",
+    "image": "https://boldijar.github.io/img/ice_0.gif"
+  },
+  {
+    "id": 5,
+    "title": "Tic Tac Toe",
+    "subtitle": "Tic Tac Toe. But on android wallpaper",
+    "image": "https://boldijar.github.io/img/tictac_0.png"
+  }
+]

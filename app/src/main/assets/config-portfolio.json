@@ -1,7 +1,7 @@
 {
   "core": {
     "version": 1,
-    "endpoint": "http://172.25.12.232:1997/prody/index.php/"
+    "endpoint": "http://172.20.10.3:1997/prody/index.php/"
   },
   "style": {
     "primary": "#F57C00",
@@ -29,6 +29,7 @@
         "span": 2,
         "using_padding": true,
         "staggered": true,
+        "url": "https://dl.dropbox.com/s/1woddvlqcc82opz/products.json?dl=0",
         "shuffle": true,
         "scale_type": "center_crop"
       },
@@ -39,6 +40,7 @@
         "variant": "image_wrap_basic_details",
         "category": "games",
         "span": 1,
+        "url": "https://dl.dropbox.com/s/li1pztar11cthxj/games.json?dl=0",
         "scale_type": "fit_center",
         "using_padding": false,
         "staggered": false

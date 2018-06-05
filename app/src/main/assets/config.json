@@ -1,7 +1,7 @@
 {
   "core": {
     "version": 1,
-    "endpoint": "http://172.25.12.232:1997/prody/index.php/"
+    "endpoint": "http://172.20.10.3:1997/prody/index.php/"
   },
   "style": {
     "primary": "#00BCD4",

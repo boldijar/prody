@@ -1,8 +1,6 @@
 package com.prody.core.mvp;
 
 
-import com.prody.core.mvp.Presenter;
-
 import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
 import timber.log.Timber;

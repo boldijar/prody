@@ -32,7 +32,7 @@ public class SplashPresenter extends Presenter<SplashView> {
             @Override
             public void subscribe(ObservableEmitter<Config> e) throws Exception {
                 Thread.sleep(2000);
-                InputStream inputStream = context.getAssets().open("config.json");
+                InputStream inputStream = context.getAssets().open("config-portfolio.json");
                 InputStreamReader reader = new InputStreamReader(inputStream);
                 Config config = new Gson().fromJson(reader, Config.class);
                 e.onNext(config);
@@ -45,6 +45,12 @@ public class SplashPresenter extends Presenter<SplashView> {
                     @Override
                     public void onNext(Config value) {
                         getView().showConfig(value);
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+                        super.onError(e);
+                        e.printStackTrace();
                     }
                 });
     }

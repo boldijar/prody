@@ -2,7 +2,6 @@ package com.prody.core.server;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.prody.BuildConfig;
 import com.prody.Shaorma;
 import com.prody.server.ApiService;
 import com.prody.server.NetworkInterceptor;
@@ -47,11 +46,7 @@ public class ApiModule {
     @Provides
     HttpLoggingInterceptor provideLoggingInterceptor() {
         HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
-        if (BuildConfig.DEBUG) {
-            interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
-        } else {
-            interceptor.setLevel(HttpLoggingInterceptor.Level.NONE);
-        }
+        interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
         return interceptor;
     }
 

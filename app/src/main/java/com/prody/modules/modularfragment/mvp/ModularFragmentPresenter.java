@@ -1,5 +1,7 @@
 package com.prody.modules.modularfragment.mvp;
 
+import android.text.TextUtils;
+
 import com.prody.core.data.models.Product;
 import com.prody.core.data.models.config.MenuItem;
 import com.prody.core.di.InjectionHelper;
@@ -12,6 +14,7 @@ import java.util.List;
 
 import javax.inject.Inject;
 
+import io.reactivex.Observable;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.schedulers.Schedulers;
 
@@ -31,26 +34,33 @@ public class ModularFragmentPresenter extends Presenter<ModularFragmentView> {
     }
 
     public void loadProducts(final MenuItem menuItem) {
-        mApiService.getProducts(menuItem.getCategory())
-                .subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new MvpObserver<List<Product>>(this) {
-                    @Override
-                    public void onNext(List<Product> value) {
-                        for (Product product : value) {
-                            product.setVariant(menuItem.getVariant());
-                        }
-                        if (menuItem.isShuffle()) {
-                            Collections.shuffle(value);
-                        }
-                        getView().showProducts(value);
-                    }
+        Observable<List<Product>> observable;
+        if (TextUtils.isEmpty(menuItem.getUrl())) {
+            observable = mApiService.getProducts(menuItem.getCategory())
+                    .subscribeOn(Schedulers.io())
+                    .observeOn(AndroidSchedulers.mainThread());
+        } else {
+            observable = mApiService.getProductsByUrl(menuItem.getUrl())
+                    .subscribeOn(Schedulers.io())
+                    .observeOn(AndroidSchedulers.mainThread());
+        }
+        observable.subscribe(new MvpObserver<List<Product>>(this) {
+            @Override
+            public void onNext(List<Product> value) {
+                for (Product product : value) {
+                    product.setVariant(menuItem.getVariant());
+                }
+                if (menuItem.isShuffle()) {
+                    Collections.shuffle(value);
+                }
+                getView().showProducts(value);
+            }
 
-                    @Override
-                    public void onError(Throwable e) {
-                        super.onError(e);
-                        getView().showError();
-                    }
-                });
+            @Override
+            public void onError(Throwable e) {
+                super.onError(e);
+                getView().showError();
+            }
+        });
     }
 }

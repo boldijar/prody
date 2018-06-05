@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Park Park Go",
+    "subtitle": "Finding parking spots made easy",
+    "description": "This project was made during Innovation Labs 2018 Cluj Napoca, from the Dutylabs team. In this app you can share your parking spot, earning credits, or use your own credits to park to other people parking spot.",
+    "image": "https://boldijar.github.io/img/parkparkgo_1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "University Labster",
+    "subtitle": "Social network for students",
+    "description": "This project was made during ITEC 2017 Winter edition hackathon, where we had to build a social network app for students, in 48 hours. I've won the 1st place.",
+    "image": "https://boldijar.github.io/img/labster_0.gif"
+  },
+  {
+    "id": 3,
+    "title": "IOT App",
+    "subtitle": "Internet of Things android app",
+    "description": "This project was made at Hacksociety Hackathon",
+    "image": "https://boldijar.github.io/img/iot.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Livetickets",
+    "subtitle": "Scanning festival tickets app",
+    "description": "With this app you can scan tickets at a festival, you can do this also offline, because the app will take care of the ticket sync when the internet connection comes back.",
+    "image": "https://boldijar.github.io/img/livetickets_3.png"
+  },
+  {
+    "id": 5,
+    "title": "Today Menu App",
+    "subtitle": "In this app you can see your favorite restaurants daily menu offers.",
+    "description": "App is very useful for people working at offices, that want to go eat something nearby.",
+    "image": "https://boldijar.github.io/img/menu_3.png"
+  },
+  {
+    "id": 6,
+    "title": "ProTV App",
+    "subtitle": "App for PROTV channel",
+    "description": "",
+    "image": "https://boldijar.github.io/img/protv_3.png"
+  }
+]
