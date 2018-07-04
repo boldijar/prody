@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "The Bosco is a company based in NY focusing on top-notch photo installations and on designing unique brand experiences for customers such as Pandora, H&M and Gatorade. We were approached by the development team at The Bosco to help with their iPad application, The Bosco Lite, in terms of optimizations, maintenance and adding new features. Following our successful collaboration, we subsequently developed The Bosco Lookbook, a web application which interactively shows brand collaboration case studies, and also collaborated on some other new features or improvements related to event-based projects.",
+    "image": "https://wolfpack-digital.com/system/pictures/images/000/000/067/large/bosco-2-1000x1000.jpg?1527288097"
+  },
+  {
+    "id": 2,
+    "title": "Autoproff is a company based in Denmark offering a comprehensive B2B auctioning tool to auto dealers across Europe. We were initially approached by the development team at Autoproff to help with their iOS application by adding new features, performing optimizations and ensuring maintenance. We also offered product-focused consultancy during the initial stage of the collaboration, and were consequently invited to propose a full UI/UX redesign of the web and mobile applications. We then proceeded to building the current version of the web application used by representatives of car dealerships, which contained brand new features, and to performing a face-lift to both mobile applications (iOS/Android).",
+    "image": "https://wolfpack-digital.com/system/pictures/images/000/000/071/large/autoproff-3-1000x1000.jpg?1527288161"
+  },
+  {
+    "id": 3,
+    "subtitle": "JobNinja Gmbh is a company from Munich, Germany, offering a different and fun approach to job recruitment, based on a matchmaking approach similar to that of popular dating applications. Companies use a separate web tool for viewing applicants. We were approached by the founders of this fast growing start-up to develop their native iOS application and worked closely with their development team since 2015.",
+    "image": "https://wolfpack-digital.com/system/pictures/images/000/000/077/large/job-ninja-1.jpg?1527288268"
+  },
+  {
+    "id": 4,
+    "subtitle": "Makerist is a growing company from Berlin, with presence in Germany and the United States. Their mission is to make crafting simple, by making traditional crafts more modern and accessible, thus inspiring more people to become makers and offering inspiration to the creative community. The Makerist web platform is a marketplace for crafting materials and patterns sold by independent designers. We came in contact with the CEO of the company, Axel Heinz, as Makerist was searching for more Ruby on Rails development power. We started a successful collaboration focused on improving the existing platform and adding new functionalities and a new content management system.",
+    "image": "https://wolfpack-digital.com/system/pictures/images/000/000/078/large/MKR-2-1000x1000.jpg?1527288317"
+  },
+  {
+    "id": 5,
+    "title": "Alcohop is a Dublin-based start-up offering a platform which allows mobile users to have beverages delivered to their doorstep from chosen partner liquor stores. Business partners can manage their store, products and offers by using a dedicated dashboard. We were approached by the Alcohop representative, Lorcan Cullen, to take over development of future functionalities and maintenance for the entire platform, consisting of an iOS application, an Android application and a web application. Our collaboration with Alcohop is an ongoing successful collaboration, where we continuously focus on understanding the needs of the customer and work effectively to adapt the product accordingly.",
+    "image": "https://wolfpack-digital.com/system/pictures/images/000/000/088/large/alcohop-2--1000x1000.jpg?1527288454"
+  },
+  {
+    "id": 6,
+    "title": "365 Days Luxembourgish is an educational mobile application owned by Languages.lu, a languages school in Luxembourg. It focuses on teaching users the newly-recognised Luxembourgish language in an engaging way. There is a new lesson available for every day, each lesson comprising of interactive exercises followed by a final test which allows users to pass to the next lesson. We came into contact with the CEO of Languages.lu in early 2017 to design and create this educational app for both Android and iOS. The application was featured on RTL during Luxembourg Internet Days.",
+    "image": "https://wolfpack-digital.com/system/pictures/images/000/000/104/large/lu-1.jpg?1528229974"
+  },
+  {
+    "id": 7,
+    "title": "FirstAgenda is a company based in Aarhus, Denmark, building an innovative meeting solution. The application allows preparing for, holding and following-up on meetings easily and efficiently. FirstAgenda was named as one of the top 10 start-ups in Denmark in 2017 and it has an important investment from The Danish Growth Fund. In March 2017, we came in contact with Peter Willemoes Kondrup, the CTO of Agenda, to build the Android application.",
+    "image": "https://wolfpack-digital.com/system/pictures/images/000/000/102/large/fa1-1000x1000.jpg?1527290575"
+  }
+]

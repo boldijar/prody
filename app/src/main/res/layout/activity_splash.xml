@@ -13,4 +13,20 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         app:SpinKit_Color="@color/colorOnPrimary"/>
+
+    <Spinner
+        android:id="@+id/splash_config"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:entries="@array/configs"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickedNext"
+        android:layout_gravity="center"
+        android:layout_marginTop="140dp"
+        android:text="Next"/>
 </FrameLayout>

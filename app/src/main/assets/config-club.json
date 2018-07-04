@@ -1,0 +1,252 @@
+{
+  "core": {
+    "version": 1
+  },
+  "style": {
+    "primary": "#22CEB6",
+    "secondary": "#1db7a0",
+    "accent": "#E91E63",
+    "background": "#ffffff",
+    "text_color": "#ffffff",
+    "text_color_secondary": "#F5F5F5",
+    "text_color_on_background": "#1a1a1a",
+    "drawer_background": "#ffffff",
+    "drawer_text_color": "1a1a1a"
+  },
+  "hierarchy": {
+    "title": "Party people",
+    "navigation_type": "tabs",
+    "has_toolbar": true,
+    "drawer_image": "https://boldijar.github.io/img/team/paul.png",
+    "items": [
+      {
+        "icon": "https://i.imgur.com/Oty3qDn.png",
+        "title": "Parties #1",
+        "type": "vertical_list",
+        "variant": "card_image",
+        "span": 1,
+        "using_padding": true,
+        "staggered": false,
+        "url": "https://www.dropbox.com/s/ypqyitnjo6sypyt/party_images.json?dl=1",
+        "shuffle": true,
+        "scale_type": "center_crop"
+      },
+      {
+        "icon": "https://i.imgur.com/Oty3qDn.png",
+        "title": "Parties #1",
+        "type": "vertical_list",
+        "variant": "card_image",
+        "span": 2,
+        "using_padding": true,
+        "staggered": false,
+        "url": "https://www.dropbox.com/s/ypqyitnjo6sypyt/party_images.json?dl=1",
+        "shuffle": true,
+        "scale_type": "center_crop"
+      },
+      {
+        "icon": "https://i.imgur.com/Oty3qDn.png",
+        "title": "Parties #1",
+        "type": "vertical_list",
+        "variant": "card_image",
+        "span": 3,
+        "using_padding": true,
+        "staggered": false,
+        "url": "https://www.dropbox.com/s/ypqyitnjo6sypyt/party_images.json?dl=1",
+        "shuffle": true,
+        "scale_type": "center_crop"
+      },
+      {
+        "icon": "https://i.imgur.com/Oty3qDn.png",
+        "title": "Parties #1",
+        "type": "vertical_list",
+        "variant": "card_image",
+        "span": 4,
+        "using_padding": true,
+        "staggered": false,
+        "url": "https://www.dropbox.com/s/ypqyitnjo6sypyt/party_images.json?dl=1",
+        "shuffle": true,
+        "scale_type": "center_crop"
+      },
+      {
+        "icon": "https://i.imgur.com/Oty3qDn.png",
+        "title": "Parties #2",
+        "type": "vertical_list",
+        "variant": "image",
+        "span": 1,
+        "using_padding": true,
+        "staggered": false,
+        "url": "https://www.dropbox.com/s/ypqyitnjo6sypyt/party_images.json?dl=1",
+        "shuffle": true,
+        "scale_type": "center_crop"
+      },
+      {
+        "icon": "https://i.imgur.com/Oty3qDn.png",
+        "title": "Parties #2",
+        "type": "vertical_list",
+        "variant": "image",
+        "span": 2,
+        "using_padding": true,
+        "staggered": false,
+        "url": "https://www.dropbox.com/s/ypqyitnjo6sypyt/party_images.json?dl=1",
+        "shuffle": true,
+        "scale_type": "center_crop"
+      },
+      {
+        "icon": "https://i.imgur.com/Oty3qDn.png",
+        "title": "Parties #2",
+        "type": "vertical_list",
+        "variant": "image",
+        "span": 3,
+        "using_padding": true,
+        "staggered": false,
+        "url": "https://www.dropbox.com/s/ypqyitnjo6sypyt/party_images.json?dl=1",
+        "shuffle": true,
+        "scale_type": "center_crop"
+      },
+      {
+        "icon": "https://i.imgur.com/Oty3qDn.png",
+        "title": "Parties #2",
+        "type": "vertical_list",
+        "variant": "image",
+        "span": 3,
+        "using_padding": false,
+        "staggered": false,
+        "url": "https://www.dropbox.com/s/ypqyitnjo6sypyt/party_images.json?dl=1",
+        "shuffle": true,
+        "scale_type": "center_crop"
+      },
+      {
+        "icon": "https://i.imgur.com/Oty3qDn.png",
+        "title": "Parties #3",
+        "type": "vertical_list",
+        "variant": "basic_details",
+        "span": 1,
+        "using_padding": true,
+        "staggered": false,
+        "url": "https://www.dropbox.com/s/ypqyitnjo6sypyt/party_images.json?dl=1",
+        "shuffle": true,
+        "scale_type": "center_crop"
+      },
+      {
+        "icon": "https://i.imgur.com/Oty3qDn.png",
+        "title": "Parties #3",
+        "type": "vertical_list",
+        "variant": "basic_details",
+        "span": 2,
+        "using_padding": true,
+        "staggered": false,
+        "url": "https://www.dropbox.com/s/ypqyitnjo6sypyt/party_images.json?dl=1",
+        "shuffle": true,
+        "scale_type": "center_crop"
+      },
+      {
+        "icon": "https://i.imgur.com/Oty3qDn.png",
+        "title": "Parties #3",
+        "type": "vertical_list",
+        "variant": "basic_details",
+        "span": 3,
+        "using_padding": true,
+        "staggered": false,
+        "url": "https://www.dropbox.com/s/ypqyitnjo6sypyt/party_images.json?dl=1",
+        "shuffle": true,
+        "scale_type": "center_crop"
+      },
+      {
+        "icon": "https://i.imgur.com/Oty3qDn.png",
+        "title": "Parties #4",
+        "type": "vertical_list",
+        "variant": "image_wrap",
+        "span": 1,
+        "using_padding": true,
+        "staggered": false,
+        "url": "https://www.dropbox.com/s/ypqyitnjo6sypyt/party_images.json?dl=1",
+        "shuffle": true,
+        "scale_type": "center_crop"
+      },
+      {
+        "icon": "https://i.imgur.com/Oty3qDn.png",
+        "title": "Parties #4",
+        "type": "vertical_list",
+        "variant": "image_wrap",
+        "span": 2,
+        "using_padding": true,
+        "staggered": false,
+        "url": "https://www.dropbox.com/s/ypqyitnjo6sypyt/party_images.json?dl=1",
+        "shuffle": true,
+        "scale_type": "center_crop"
+      },
+      {
+        "icon": "https://i.imgur.com/Oty3qDn.png",
+        "title": "Parties #4",
+        "type": "vertical_list",
+        "variant": "image_wrap",
+        "span": 2,
+        "using_padding": false,
+        "staggered": false,
+        "url": "https://www.dropbox.com/s/ypqyitnjo6sypyt/party_images.json?dl=1",
+        "shuffle": true,
+        "scale_type": "fit_center"
+      },
+      {
+        "icon": "https://i.imgur.com/Oty3qDn.png",
+        "title": "Parties #4",
+        "type": "vertical_list",
+        "variant": "image_wrap",
+        "span": 3,
+        "using_padding": true,
+        "staggered": false,
+        "url": "https://www.dropbox.com/s/ypqyitnjo6sypyt/party_images.json?dl=1",
+        "shuffle": true,
+        "scale_type": "center_crop"
+      },
+      {
+        "icon": "https://i.imgur.com/Oty3qDn.png",
+        "title": "Parties #5",
+        "type": "vertical_list",
+        "variant": "image_wrap_basic_details",
+        "span": 1,
+        "using_padding": true,
+        "staggered": false,
+        "url": "https://www.dropbox.com/s/ypqyitnjo6sypyt/party_images.json?dl=1",
+        "shuffle": true,
+        "scale_type": "center_crop"
+      },
+      {
+        "icon": "https://i.imgur.com/Oty3qDn.png",
+        "title": "Parties #5",
+        "type": "vertical_list",
+        "variant": "image_wrap_basic_details",
+        "span": 2,
+        "using_padding": true,
+        "staggered": false,
+        "url": "https://www.dropbox.com/s/ypqyitnjo6sypyt/party_images.json?dl=1",
+        "shuffle": true,
+        "scale_type": "center_crop"
+      },
+      {
+        "icon": "https://i.imgur.com/Oty3qDn.png",
+        "title": "Parties #5",
+        "type": "vertical_list",
+        "variant": "image_wrap_basic_details",
+        "span": 2,
+        "using_padding": false,
+        "staggered": false,
+        "url": "https://www.dropbox.com/s/ypqyitnjo6sypyt/party_images.json?dl=1",
+        "shuffle": true,
+        "scale_type": "fit_center"
+      },
+      {
+        "icon": "https://i.imgur.com/Oty3qDn.png",
+        "title": "Parties #5",
+        "type": "vertical_list",
+        "variant": "image_wrap_basic_details",
+        "span": 3,
+        "using_padding": true,
+        "staggered": false,
+        "url": "https://www.dropbox.com/s/ypqyitnjo6sypyt/party_images.json?dl=1",
+        "shuffle": true,
+        "scale_type": "center_crop"
+      }
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "core": {
+    "version": 1
+  },
+  "style": {
+    "primary": "#22CEB6",
+    "secondary": "#1db7a0",
+    "accent": "#E91E63",
+    "background": "#ffffff",
+    "text_color": "#ffffff",
+    "text_color_secondary": "#F5F5F5",
+    "text_color_on_background": "#1a1a1a",
+    "drawer_background": "#ffffff",
+    "drawer_text_color": "1a1a1a"
+  },
+  "hierarchy": {
+    "title": "Wolfpack digital",
+    "navigation_type": "tabs",
+    "has_toolbar": true,
+    "drawer_image": "https://boldijar.github.io/img/team/paul.png",
+    "items": [
+      {
+        "icon": "https://i.imgur.com/Oty3qDn.png",
+        "title": "What we do?",
+        "type": "vertical_list",
+        "variant": "card_basic_details",
+        "span": 2,
+        "using_padding": true,
+        "staggered": false,
+        "url": "https://www.dropbox.com/s/zodtjj361g1a9ee/wolfpack_whatwedo.json?dl=1",
+        "shuffle": true,
+        "scale_type": "center_crop"
+      },
+      {
+        "icon": "https://i.imgur.com/0eqPa5L.png",
+        "title": "Portfolio",
+        "type": "vertical_list",
+        "variant": "image_wrap_basic_details",
+        "span": 1,
+        "url": "https://www.dropbox.com/s/wqk6hs4uv706xel/wolfpack_portfolio.json?dl=1",
+        "scale_type": "fit_center",
+        "using_padding": false,
+        "staggered": false
+      },
+      {
+        "icon": "https://i.imgur.com/0eqPa5L.png",
+        "title": "Our team",
+        "type": "vertical_list",
+        "variant": "image_wrap_basic_details",
+        "span": 2,
+        "url": "https://www.dropbox.com/s/3k48ywoj6hs9lyd/wolfpack_team.json?dl=1",
+        "scale_type": "fit_center",
+        "using_padding": false,
+        "staggered": false
+      },
+      {
+        "icon": "https://i.imgur.com/Ug1nZwn.png",
+        "title": "Contact",
+        "type": "contact",
+        "contact_items": [
+          {
+            "type": "email",
+            "text": "contact@wolfpack-digital.com"
+          },
+          {
+            "type": "phone",
+            "text": "+40741118030"
+          },
+          {
+            "type": "location",
+            "text": "Racovita 33, 400165 Cluj-Napoca, Romania",
+            "latitude": 46.7677955,
+            "longitude": 23.5912762
+          },
+          {
+            "type": "info",
+            "text": "With vast experience across several industries, we build successful web and mobile apps. Let us take you from the idea phase all the way to setting the strategy, defining the product, design, development, quality assurance and a flawless delivery."
+          }
+        ]
+      }
+    ]
+  }
+}

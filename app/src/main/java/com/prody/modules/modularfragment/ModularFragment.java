@@ -5,7 +5,6 @@ import android.support.annotation.Nullable;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -29,6 +28,8 @@ import butterknife.ButterKnife;
  */
 
 public class ModularFragment extends BaseFragment implements ModularFragmentView {
+
+    private List<Product> mItems;
 
     public static ModularFragment newInstance(MenuItem item) {
         Bundle args = new Bundle();
@@ -54,11 +55,14 @@ public class ModularFragment extends BaseFragment implements ModularFragmentView
         return R.layout.fragment_module;
     }
 
+
     @Override
     protected void onCreateView(View view) {
         ButterKnife.bind(this, view);
-        if (!TextUtils.isEmpty(mItem.getCategory())) {
+        if (mItems == null) {
             mModularFragmentPresenter.loadProducts(mItem);
+        } else {
+            showProducts(mItems);
         }
     }
 
@@ -75,6 +79,7 @@ public class ModularFragment extends BaseFragment implements ModularFragmentView
 
     @Override
     public void showProducts(List<Product> products) {
+        mItems = products;
         mRegularListAdapter = new RegularListAdapter(products, mItem);
         if (mItem.getSpan() > 1 && mItem.isStaggered()) {
             mRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(mItem.getSpan(), StaggeredGridLayoutManager.VERTICAL));

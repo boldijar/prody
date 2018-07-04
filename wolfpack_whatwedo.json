@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "subtitle": "Target Audience - Competition Analysis - MVP Requirements - Roadmaps & KPIs - Solution Design",
+    "image": "https://i.snag.gy/LRhSBm.jpg"
+  },
+  {
+    "id": 2,
+    "subtitle": "API, Backend & CMS - Front-end Web Development - Server Provisioning - Scalable Architecture - Web development using Ruby on Rails, React, Angular, Vue.js",
+    "image": "https://i.snag.gy/dZw2L5.jpg"
+  },
+  {
+    "id": 3,
+    "subtitle": "Wireframing - Interactive Prototyping - Usability Testing - Interface Design - Experience Design",
+    "image": "https://i.snag.gy/67Jywi.jpg"
+  },
+  {
+    "id": 4,
+    "subtitle": "Quality Assurance - Guaranteed response time - Regression testing - Automated tests - 24/7 Monitoring",
+    "image": "https://i.snag.gy/T2C1qf.jpg"
+  }
+]

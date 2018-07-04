@@ -16,7 +16,7 @@
   },
   "hierarchy": {
     "title": "Boldijar Paul portfolio",
-    "navigation_type": "tabs",
+    "navigation_type": "drawer",
     "has_toolbar": true,
     "drawer_image": "https://boldijar.github.io/img/team/paul.png",
     "items": [

@@ -10,6 +10,7 @@ import com.prody.core.ui.fragment.UnimplementedFragment;
 import com.prody.modules.contact.ContactFragment;
 import com.prody.modules.modularfragment.ModularFragment;
 
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -20,20 +21,33 @@ import java.util.List;
 public class ModularPageAdapter extends FragmentPagerAdapter {
 
     private final List<MenuItem> mMenuItems;
+    private final HashMap<Integer, Fragment> mFragmentHashMap;
 
     public ModularPageAdapter(FragmentManager fm, @NonNull List<MenuItem> menuItems) {
         super(fm);
         mMenuItems = menuItems;
+        mFragmentHashMap = new HashMap<>();
     }
 
 
     @Override
     public Fragment getItem(int position) {
+        Fragment fragment;
         switch (mMenuItems.get(position).getModuleType()) {
             case VERTICAL_LIST:
-                return ModularFragment.newInstance(mMenuItems.get(position));
+                fragment = mFragmentHashMap.get(position);
+                if (fragment == null) {
+                    fragment = ModularFragment.newInstance(mMenuItems.get(position));
+                    mFragmentHashMap.put(position, fragment);
+                }
+                return fragment;
             case CONTACT:
-                return ContactFragment.newInstance(mMenuItems.get(position));
+                fragment = mFragmentHashMap.get(position);
+                if (fragment == null) {
+                    fragment = ContactFragment.newInstance(mMenuItems.get(position));
+                    mFragmentHashMap.put(position, fragment);
+                }
+                return fragment;
         }
         return new UnimplementedFragment();
     }

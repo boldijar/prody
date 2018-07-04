@@ -74,6 +74,9 @@ public class ApiModule {
     Retrofit provideRetrofitHolder(final OkHttpClient okHttpClient,
                                    final Converter.Factory converter,
                                    final CallAdapter.Factory adapterFactory) {
+        if (ENDPOINT == null) {
+            ENDPOINT = "https://www.google.ro/";
+        }
         return new Retrofit.Builder()
                 .addConverterFactory(converter)
                 .addCallAdapterFactory(adapterFactory)
